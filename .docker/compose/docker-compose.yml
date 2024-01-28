@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+
+  php:
+    container_name: ${PHP_CONTAINER_NAME}
+    image: tommyprmbd:laravel10-latest
+    volumes:
+      - ./../../src:/var/www/html
+    ports:
+      - "${PHP_CONTAINER_BIND_PORT}:9000"
+    networks:
+      - laravel
+
+  nginx:
+    container_name: ${NGINX_CONTAINER_NAME}
+    image: nginx:stable-alpine
+    ports:
+      - "${NGINX_CONTAINER_BIND_PORT}:80"
+    volumes:
+      - ./../../src:/var/www/html
+      - ./../config/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./../config/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - ./../config/nginx/module.conf/fastcgi_cache.conf.example:/etc/nginx/module.conf/fastcgi_cache.conf
+    depends_on:
+      - php
+    networks:
+      - laravel
+
+networks:
+  laravel:
+  

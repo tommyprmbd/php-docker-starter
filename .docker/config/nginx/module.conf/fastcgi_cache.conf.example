@@ -1,0 +1,23 @@
+# POST requests and urls with a query string should always go to PHP
+if ($request_method = POST) {
+   set $skip_cache 1;
+}
+
+if ($query_string != "") {
+   set $skip_cache 1;
+}
+
+# cache uris containing the following segments
+#if ($request_uri ~* "sitemap|expert|corporate|term|product") {
+#   set $skip_cache 0;
+#}
+
+# Don't cache uris containing the following segments
+#if ($request_uri ~* "/lorem-ipsum") {
+#   set $skip_due_valid_request_uri 1;
+#   set $skip_cache 1;
+#}
+
+if ($request_uri = /) {
+   set $skip_cache 0;
+}
