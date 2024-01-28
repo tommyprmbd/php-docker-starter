@@ -3,7 +3,7 @@ services:
 
   php:
     container_name: ${PHP_CONTAINER_NAME}
-    image: tommyprmbd:laravel10-latest
+    image: tommyprmbd/php8.3:v1.0
     volumes:
       - ./../../src:/var/www/html
     ports:
