@@ -4,7 +4,7 @@
 Docker running Custom PHP Image(Include Composer), Nginx & MySQL
 
 ## Overview
-1. [Prerequisites](#section-prerequisites)<br />
+1. [Prerequisites](#prerequisites)<br />
     Before installing project make sure the following prerequisites have been met.
 2. [Clone Project](#section-clone)<br />
     Download code from GitHub.
@@ -16,7 +16,7 @@ Docker running Custom PHP Image(Include Composer), Nginx & MySQL
     Default environment configuration.
 6. [Support](#section-support)
 
-## [Prerequisites](#section-prerequisites)
+## Prerequisites
 This project mainly created for Unix (Linux/McOS). It could be work too on Windows. Basically, this project is for Laravel project. But, it also support for other framework with minor configuration adjustment.
 
 Before running the project, all requisites below must installed in your system:
