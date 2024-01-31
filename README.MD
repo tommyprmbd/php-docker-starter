@@ -1,5 +1,5 @@
 # Docker - PHP - Nginx - MySQL 
-[![Version](https://badge.fury.io/gh/tommyprmbd/php-docker-starter.svg)](https://badge.fury.io/gh/tommyprmbd/php-docker-starter)
+![GitHub Tag](https://img.shields.io/github/v/tag/tommyprmbd/php-docker-starter)
 <br />
 Docker running Custom PHP Image(Include Composer), Nginx & MySQL
 
