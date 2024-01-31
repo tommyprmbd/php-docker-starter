@@ -1,6 +1,4 @@
-# Docker - PHP - Nginx - MySQL 
-![GitHub Tag](https://img.shields.io/github/v/tag/tommyprmbd/php-docker-starter)
-<br />
+# Docker - PHP - NGINX - MySQL  ![GitHub Tag](https://img.shields.io/github/v/tag/tommyprmbd/php-docker-starter)
 Docker running Custom PHP Image(Include Composer), Nginx & MySQL
 
 ## Overview
