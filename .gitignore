@@ -1,1 +1,10 @@
 .env
+
+# exclude everything inside data folder
+.docker/data/mysql/*
+
+# but keep file .gitkeep inside data folder
+.docker/data/mysql/.gitkeep
+
+# exclude Dockerfile
+.docker/file/Dockerfile
