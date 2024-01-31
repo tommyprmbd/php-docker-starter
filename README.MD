@@ -6,15 +6,15 @@ Docker running Custom PHP Image(Include Composer), Nginx & MySQL
 ## Overview
 1. [Prerequisites](#prerequisites)<br />
     Before installing project make sure the following prerequisites have been met.
-2. [Clone Project](#section-clone)<br />
+2. [Clone Project](#clone-project)<br />
     Download code from GitHub.
-3. [Run The Application](#section-install)<br />
+3. [Run The Application](#run-the-application)<br />
     Installation and run the application.
-4. [Use Makefile](#section-makefile)<br />
+4. [Use Makefile](#use-makefile)<br />
     You can use ```Makefile``` for doing recurrent operation.
-5. [Environment Configuration](#section-environment)<br />
+5. [Environment Configuration](#environment-configuration)<br />
     Default environment configuration.
-6. [Support](#section-support)
+6. [Support](#support)
 
 ## Prerequisites
 This project mainly created for Unix (Linux/McOS). It could be work too on Windows. Basically, this project is for Laravel project. But, it also support for other framework with minor configuration adjustment.
@@ -32,7 +32,7 @@ Images to use:
 - [PHP-FPM](https://hub.docker.com/repository/docker/tommyprmbd/php8.3/general) (Customized by me. Composer & NodeJS are included)
 - [MySQL](https://www.mysql.com/)
 
-## [Clone Project](#section-clone)
+## Clone Project
 To clone this project, use command below
 ```shell
 git clone git@github.com:tommyprmbd/php-docker-starter.git
@@ -75,7 +75,7 @@ This project using this following ports:
 |MySQL|3308|
 |NGINX|8000|
 
-## [Run The Application](#section-install)
+## Run The Application
 1. Make runner.sh file as executable file. Use below command to convert as executable file:
     ```shell
     chmod +x runner.sh
@@ -97,7 +97,7 @@ This project using this following ports:
 4. Open your browser, then go to:
     - http://localhost:8000
 
-## [Use Makefile](#section-makefile)
+## Use Makefile
 |Name|Description|
 |---|---|
 |start|Build and run containers|
@@ -114,7 +114,7 @@ Show help
 make help
 ```
 
-## [Environment Configuration](#section-environment)
+## Environment Configuration
 ```shell
 COMPOSE_PROJECT_NAME="My Laravel Project"
 
@@ -145,6 +145,4 @@ MYSQL_PASSWORD=tommyprmbd
 | MYSQL_USER|Set MySQL username|
 | MYSQL_PASSWORD|Set MySQL password|
 
-## [Support](#section-support)
-You can reach me on 
-- [instagram](https://www.instagram.com/tommyprmbd)
+## Support
